@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/UI/contactus.dart';
-import 'package:home_work_app/theme/constants.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'my_flutter_app_icons.dart';
 
@@ -25,7 +24,7 @@ class selecttype extends StatelessWidget {
       home: Scaffold(
         //################  APP BAR   ########################//
         appBar: AppBar(
-          backgroundColor: MyTheme.orange,
+          backgroundColor: kOrangeN,
           title: Text("Select The Level"),
           actions: [IconButton(icon: Icon(MyFlutterApp.home), onPressed: (){
             Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
@@ -51,8 +50,8 @@ class selecttype extends StatelessWidget {
               end: Alignment.topCenter,
               stops: [0.1, 0.5],
               colors: [
-                MyTheme.red,
-                MyTheme.orange,
+                kRedN,
+                kOrangeN,
               ],
             ),
           ),
