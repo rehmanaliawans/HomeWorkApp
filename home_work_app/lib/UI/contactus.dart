@@ -33,7 +33,7 @@ class contactus extends StatelessWidget {
             gradient: kPrimaryGradient,
           ),
           child: ContactUs(
-            logo: AssetImage('images/profile.jpeg'),
+            logo: AssetImage('images/tc1.jpg'),
             email: 'rehamnaliawans@gmail.com',
             companyName: 'Tech Creations',
             phoneNumber: '+923086464008',
@@ -41,11 +41,9 @@ class contactus extends StatelessWidget {
             linkedinURL: 'https://www.linkedin.com/in/rehman-ali-8a94b6150/',
             tagLine: 'Flutter Developer',
             twitterHandle: 'REHMAN6464',
-            instagram: 'its_maaaan',
           ),
         ),
         bottomNavigationBar: ContactUsBottomAppBar(
-
           companyName: 'Tech Creations',
           textColor: Colors.white,
           backgroundColor: Colors.teal.shade300,
