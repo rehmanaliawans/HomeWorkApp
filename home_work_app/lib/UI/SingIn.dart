@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:home_work_app/Fade_Animation/FadeAnimation.dart';
-
-import '../theme/theme.dart';
-import 'Navigation_Drawer.dart';
-import 'SignUp.dart';
 import 'SignUp.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
