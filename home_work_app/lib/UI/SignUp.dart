@@ -1,13 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:home_work_app/Fade_Animation/FadeAnimation.dart';
+import 'Navigation_Drawer.dart';
 import 'SingIn.dart';
 import 'SingIn.dart';
+import 'my_flutter_app_icons.dart';
+import 'selected_type.dart';
 
 class signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.indigo[800],
+          title: Text("SignUp Page",),
+          leading:IconButton(icon: Icon(Icons.arrow_back), onPressed: (){
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));
+
+          }) ,
+          actions: [IconButton(icon: Icon(MyFlutterApp.home), onPressed: (){
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));
+
+          })],
+        ),
         backgroundColor: Colors.white,
+
         body: SingleChildScrollView(
           child: Container(
             child: Column(
