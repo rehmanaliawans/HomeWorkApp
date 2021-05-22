@@ -171,7 +171,7 @@ class signup extends StatelessWidget {
                       )),
                       SizedBox(height: 30,),
                       FadeAnimation(2,  MaterialButton(
-                        height: 80.0,
+                        height: 50.0,
                         minWidth: 600.0,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
                         color:  Color.fromRGBO(143, 148, 251, 1),

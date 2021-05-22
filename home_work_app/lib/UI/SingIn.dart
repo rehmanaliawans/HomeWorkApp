@@ -153,7 +153,7 @@ class signin extends StatelessWidget {
                         )),
                         SizedBox(height: 30,),
                         FadeAnimation(2, new MaterialButton(
-                          height: 80.0,
+                          height: 50.0,
                           minWidth: 600.0,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
                           color:  Color.fromRGBO(143, 148, 251, 1),
@@ -169,7 +169,7 @@ class signin extends StatelessWidget {
                         SizedBox(height: 30,),
                         FadeAnimation(1.5, Container(
                           alignment: Alignment.center,
-                          margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
+                          margin: EdgeInsets.symmetric(horizontal: 10, vertical: 3),
                           child:RichText(
                             text: TextSpan(
                                   style: defaultStyle,
@@ -183,7 +183,8 @@ class signin extends StatelessWidget {
                                         recognizer: TapGestureRecognizer()
                                           ..onTap = () {
                                             Navigator.push(context, MaterialPageRoute(builder: (context) => signup()));
-                                          }),
+                                          }
+                                          ),
 
                                   ],
                                 ),
