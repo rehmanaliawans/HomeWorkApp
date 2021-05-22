@@ -4,6 +4,7 @@ import 'package:home_work_app/UI/contactus.dart';
 import 'package:imagebutton/imagebutton.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'Navigation_Drawer.dart';
+import 'SingIn.dart';
 import 'my_flutter_app_icons.dart';
 import 'package:home_work_app/AppColors.dart';
 
@@ -28,7 +29,7 @@ class selecttype extends StatelessWidget {
         //################  APP BAR   ########################//
         appBar: AppBar(
           backgroundColor: kOrangeN,
-          title: Text("Select The Level"),
+          title: Text("Select  User Type"),
           actions: [IconButton(icon: Icon(MyFlutterApp.home), onPressed: (){
             Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));
 
@@ -78,7 +79,7 @@ class selecttype extends StatelessWidget {
                           ),
                           unpressedImage: Image.asset("admin.png"),
                           onTap: () {
-                            Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+                            Navigator.push(context,MaterialPageRoute(builder: (context)=>signin()));
                           },
                         )
 
@@ -95,7 +96,7 @@ class selecttype extends StatelessWidget {
                       ),
                       unpressedImage: Image.asset("teach.png"),
                       onTap: () {
-                        Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>signin()));
                       },
                     )
 
@@ -112,7 +113,7 @@ class selecttype extends StatelessWidget {
                       ),
                       unpressedImage: Image.asset("student.png"),
                       onTap: () {
-                        Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>signin()));
                       },
                     )
 

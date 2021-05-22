@@ -45,7 +45,11 @@ flutter:
     - assets/admin.png
     - assets/teach.png
     - assets/student.png
-    - assets/
+    - assets/images/light-1.png
+    - assets/images/light-2.png
+    - assets/images/clock.png
+    - assets/images/background.png
+
   fonts:
     - family: DancingScript
       fonts:
