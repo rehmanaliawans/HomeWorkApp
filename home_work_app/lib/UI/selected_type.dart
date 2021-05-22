@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/UI/contactus.dart';
+import 'package:imagebutton/imagebutton.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'my_flutter_app_icons.dart';
 
@@ -42,7 +43,9 @@ class selecttype extends StatelessWidget {
           ),
         ),
         //################   Body   ########################//
+
         body: Container(
+
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -50,68 +53,70 @@ class selecttype extends StatelessWidget {
               end: Alignment.topCenter,
               stops: [0.1, 0.5],
               colors: [
-                kRedN,
-                kOrangeN,
+                kSelectedType1,
+                kSelectedType2,
               ],
             ),
           ),
           child: Center(
-            child: Column(mainAxisAlignment: MainAxisAlignment.center,
+            child: Column(
               children: [
-                Container(
-                  child: Text(
-                    "Select Your Level!",
-                    style: Theme.of(context).textTheme.headline4.copyWith(
-                        color: Color(0xFFE92E30), fontWeight: FontWeight.bold),
-                  ),
-                ),
+
 
                 Container(
-                  margin: EdgeInsets.all(80),
-                  child: TextButton(
+                  margin: EdgeInsets.only(top: 160.0),
 
-                    child: Container(
-                      width: double.infinity,
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(kDefaultPadding * 0.75), // 15
-                      decoration: BoxDecoration(
-                        gradient: kPrimaryGradient,
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
-                      ),
-                      child: Text(
-                        "SIMPLE     LEVEL",
-                        style: Theme.of(context)
-                            .textTheme
-                            .button
-                            .copyWith(color: Colors.black,fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                      onPressed:(){
-                     //   Navigator.push(context,MaterialPageRoute(builder: (context)=>simple()));
-                      }
+                        child: ImageButton(
+                          children: <Widget>[],
+                          width: 381,
+                          height: 136,
+                          pressedImage: Image.asset(
+                            "admin.png",
+                          ),
+                          unpressedImage: Image.asset("admin.png"),
+                          onTap: () {
+                            Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+                          },
+                        )
+
                   ),
+                Container(
+                    margin: EdgeInsets.only(top: 160.0),
+
+                    child: ImageButton(
+                      children: <Widget>[],
+                      width: 381,
+                      height: 136,
+                      pressedImage: Image.asset(
+                        "teach.png",
+                      ),
+                      unpressedImage: Image.asset("teach.png"),
+                      onTap: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+                      },
+                    )
+
                 ),
                 Container(
-                  margin: EdgeInsets.all(80),
-                  child: TextButton(
-                    child: Container( width: double.infinity,
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(kDefaultPadding * 0.75), // 15
-                      decoration: BoxDecoration(
-                        gradient: kPrimaryGradient,
-                        borderRadius: BorderRadius.all(Radius.circular(12)),
+                    margin: EdgeInsets.only(top: 160.0),
+
+                    child: ImageButton(
+                      children: <Widget>[],
+                      width: 381,
+                      height: 136,
+                      pressedImage: Image.asset(
+                        "student.png",
                       ),
-                      child: Text("HARD     LEVEL",
-                        style: Theme.of(context)
-                            .textTheme
-                            .button
-                            .copyWith(color: Colors.black,fontWeight: FontWeight.bold),),
-                      ),
-                     onPressed:(){
-                    //   Navigator.push(context,MaterialPageRoute(builder: (context)=>hard1()));
-                     }
-                  ),
+                      unpressedImage: Image.asset("student.png"),
+                      onTap: () {
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+                      },
+                    )
+
                 ),
+
+
+
               ],
             ),
           ),

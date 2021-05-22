@@ -16,4 +16,5 @@ const double kDefaultPadding = 20.0;
 const Color kOrangeN = Color(0xfff58714);
 const Color kRedN = Color(0xfff54d63);
 const Color kGreenN = Color(0xff88e339);
-
+const Color kSelectedType1 = Color(15243964);
+const Color kSelectedType2 = Color(0xff003366);
