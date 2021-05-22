@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Nabeel Work Management App",
+      title: "Home Work Management App",
       home: new Splashscreen(),
     );
   }
