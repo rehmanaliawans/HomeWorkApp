@@ -1,6 +1,7 @@
 import 'package:contactus/contactus.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/theme//theme.dart';
+import 'Navigation_Drawer.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
 class contactus extends StatelessWidget {
@@ -21,10 +22,10 @@ class contactus extends StatelessWidget {
         ),
         drawer: Theme(
           data: Theme.of(context).copyWith( //This will change the drawer background to blue.
-            canvasColor: Colors.transparent,
+
           ),
           child: Drawer(
-
+            child: MainDrawer(),
           ),
         ),
 

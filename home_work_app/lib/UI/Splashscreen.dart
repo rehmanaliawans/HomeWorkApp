@@ -15,7 +15,7 @@ class _splashscreenState extends State<Splashscreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 0), () {
+    Timer(Duration(seconds: 15), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
        builder: (context) => selecttype(),
       ));
