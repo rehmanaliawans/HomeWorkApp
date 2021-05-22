@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/Fade_Animation/FadeAnimation.dart';
 
@@ -7,9 +8,11 @@ import 'SignUp.dart';
 import 'SignUp.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
-
+TextStyle defaultStyle = TextStyle(color: Colors.grey, fontSize: 20.0);
+TextStyle linkStyle = TextStyle(color:  Color.fromRGBO(143, 148, 251, 1),);
 
 class signin extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -142,39 +145,43 @@ class signin extends StatelessWidget {
                           ),
                         )),
                         SizedBox(height: 30,),
-                        FadeAnimation(2, Container(
-                          height: 50,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              gradient: LinearGradient(
-                                  colors: [
-                                    Color.fromRGBO(143, 148, 251, 1),
-                                    Color.fromRGBO(143, 148, 251, .9),
-                                  ]
-                              )
-                          ),
-                          child: Center(
-                            child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                          ),
-                        )),
+                        FadeAnimation(2, new MaterialButton(
+                          height: 80.0,
+                          minWidth: 600.0,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                          color:  Color.fromRGBO(143, 148, 251, 1),
+                          onPressed: () {
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => selecttype()));
+                            //HardType
+                          },
+                          child: new Text(
+                            "Login",
+                            style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.white),
+                          ),),),
                         SizedBox(height: 30,),
                         FadeAnimation(1.5, Container(
                           alignment: Alignment.center,
                           margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-                          child: GestureDetector(
-                            onTap: () => {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => signup()))
-                            },
-                            child: Text(
-                              "Create a new Account? Sign Up",
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xFF2661FA)
+                          child:RichText(
+                            text: TextSpan(
+                                  style: defaultStyle,
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                        text:
+                                            'Create a new Account?Click  '),
+                                    TextSpan(
+                                        text: 'SignUp',
+                                        style: linkStyle,
+                                        recognizer: TapGestureRecognizer()
+                                          ..onTap = () {
+                                            Navigator.push(context, MaterialPageRoute(builder: (context) => signup()));
+                                          }),
+
+                                  ],
+                                ),
                               ),
-                            ),
-                          ),
-                        )),
+                            )),
                       ],
                     ),
                   )

@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/Fade_Animation/FadeAnimation.dart';
 import 'Navigation_Drawer.dart';
@@ -158,36 +159,40 @@ class signup extends StatelessWidget {
                         ),
                       )),
                       SizedBox(height: 30,),
-                      FadeAnimation(2, Container(
-                        height: 50,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            gradient: LinearGradient(
-                                colors: [
-                                  Color.fromRGBO(143, 148, 251, 1),
-                                  Color.fromRGBO(143, 148, 251, 1),
-                                ]
-                            )
-                        ),
-                        child: Center(
-                          child: Text("Register", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
-                        ),
-                      )),
+                      FadeAnimation(2,  MaterialButton(
+                        height: 80.0,
+                        minWidth: 600.0,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                        color:  Color.fromRGBO(143, 148, 251, 1),
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(
+                              builder: (context) => selecttype()));
+                          //HardType
+                        },
+                        child: new Text(
+                          "Register",
+                          style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.white),
+                        ),),),
                       SizedBox(height: 30,),
                       FadeAnimation(1.5, Container(
                         alignment: Alignment.center,
                         margin: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
-                        child: GestureDetector(
-                          onTap: () => {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => signin()))
-                          },
-                          child: Text(
-                            "Already Have an Account? Sign in",
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.bold,
-                                color: Color(0xFF2661FA)
-                            ),
+                        child:RichText(
+                          text: TextSpan(
+                            style: defaultStyle,
+                            children: <TextSpan>[
+                              TextSpan(
+                                  text:
+                                  'Already have an Account?Click  '),
+                              TextSpan(
+                                  text: 'SignIn',
+                                  style: linkStyle,
+                                  recognizer: TapGestureRecognizer()
+                                    ..onTap = () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => signin()));
+                                    }),
+
+                            ],
                           ),
                         ),
                       )),
