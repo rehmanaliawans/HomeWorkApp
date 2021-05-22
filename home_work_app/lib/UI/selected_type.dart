@@ -5,6 +5,7 @@ import 'package:imagebutton/imagebutton.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'Navigation_Drawer.dart';
 import 'my_flutter_app_icons.dart';
+import 'package:home_work_app/AppColors.dart';
 
 
 class Constants{
@@ -29,7 +30,7 @@ class selecttype extends StatelessWidget {
           backgroundColor: kOrangeN,
           title: Text("Select The Level"),
           actions: [IconButton(icon: Icon(MyFlutterApp.home), onPressed: (){
-            Navigator.push(context,MaterialPageRoute(builder: (context)=>contactus()));
+            Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));
 
           })],
         ),
@@ -54,8 +55,9 @@ class selecttype extends StatelessWidget {
               end: Alignment.topCenter,
               stops: [0.1, 0.5],
               colors: [
-                kSelectedType1,
-                kSelectedType2,
+                kOrangeN,
+                kOrangeN
+
               ],
             ),
           ),
@@ -65,7 +67,7 @@ class selecttype extends StatelessWidget {
 
 
                 Container(
-                  margin: EdgeInsets.only(top: 160.0),
+                  margin: EdgeInsets.only(top: 60.0),
 
                         child: ImageButton(
                           children: <Widget>[],
@@ -82,7 +84,7 @@ class selecttype extends StatelessWidget {
 
                   ),
                 Container(
-                    margin: EdgeInsets.only(top: 160.0),
+                    margin: EdgeInsets.only(top: 20.0),
 
                     child: ImageButton(
                       children: <Widget>[],
@@ -99,7 +101,7 @@ class selecttype extends StatelessWidget {
 
                 ),
                 Container(
-                    margin: EdgeInsets.only(top: 160.0),
+                    margin: EdgeInsets.only(top: 20.0),
 
                     child: ImageButton(
                       children: <Widget>[],

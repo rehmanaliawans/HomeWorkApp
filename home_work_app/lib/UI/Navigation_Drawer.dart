@@ -19,25 +19,29 @@ class MainDrawer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                      width: 150,
-                      height: 100,
-                      decoration: new BoxDecoration(
-                          image: new DecorationImage(
-                            image: new AssetImage("assets/workk.gif"),
-                            fit: BoxFit.fill,
-                          )
-                      )
+                  CircleAvatar(
+                    radius: 75.0,
+                    backgroundImage: AssetImage("assets/workk.gif"),
+
                   ),
                   SizedBox(
-                    height: 5.0,
+                    height: 10.0,
+
                   ),
                   Text(
-                    "Home Work Management App",
+                    "Home Work Management \n App",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 22.0,
                       fontWeight: FontWeight.w800,
+                          color: Colors.deepOrange[800],
+                          fontStyle: FontStyle.italic,
+                          fontFamily: 'Open Sans'
                     ),
+                  ),
+                  SizedBox(
+                    height: 10.0,
+                    child: Divider( height: 10.0,),
                   ),
                 ],
               ),
@@ -56,7 +60,13 @@ class MainDrawer extends StatelessWidget {
               Icons.assessment,
               color: Colors.black,
             ),
-            title: Text("Home Page"),
+            title: Text("Home Page",style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w800,
+                color: Colors.deepOrange[800],
+                fontStyle: FontStyle.italic,
+                fontFamily: 'Open Sans'
+            ),),
           ),
           ListTile(
             onTap: () {
@@ -65,7 +75,13 @@ class MainDrawer extends StatelessWidget {
               Icons.ac_unit,
               color: Colors.black,
             ),
-            title: Text("Simple Mode"),
+            title: Text("Simple Mode",style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w800,
+                color: Colors.deepOrange[800],
+                fontStyle: FontStyle.italic,
+                fontFamily: 'Open Sans'
+            ),),
           ),
           ListTile(
             onTap: () {
@@ -75,7 +91,13 @@ class MainDrawer extends StatelessWidget {
               Icons.ac_unit_rounded,
               color: Colors.black,
             ),
-            title: Text("Hard Mode"),
+            title: Text("Hard Mode",style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w800,
+                color: Colors.deepOrange[800],
+                fontStyle: FontStyle.italic,
+                fontFamily: 'Open Sans'
+            ),),
           ),
 
           ListTile(
@@ -87,7 +109,13 @@ class MainDrawer extends StatelessWidget {
               Icons.account_circle,
               color: Colors.black,
             ),
-            title: Text("Contact Us"),
+            title: Text("Contact Us",style: TextStyle(
+                fontSize: 15.0,
+                fontWeight: FontWeight.w800,
+                color: Colors.deepOrange[800],
+                fontStyle: FontStyle.italic,
+                fontFamily: 'Open Sans'
+            ),),
           ),
         ]
     );
