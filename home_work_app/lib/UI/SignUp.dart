@@ -12,7 +12,18 @@ class signup extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.indigo[800],
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+
+                gradient: LinearGradient(
+                    colors: [
+                      Color.fromRGBO(143, 148, 251, 1),
+                      Color.fromRGBO(143, 148, 251, .9),
+                    ]
+                )
+            ),
+
+          ),
           title: Text("SignUp Page",),
           leading:IconButton(icon: Icon(Icons.arrow_back), onPressed: (){
             Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));

@@ -28,7 +28,10 @@ class selecttype extends StatelessWidget {
       home: Scaffold(
         //################  APP BAR   ########################//
         appBar: AppBar(
-          backgroundColor: kOrangeN,
+      flexibleSpace: Container(
+      decoration: BoxDecoration(
+      gradient: kPrimaryGradient,
+      ),),
           title: Text("Select  User Type"),
           actions: [IconButton(icon: Icon(MyFlutterApp.home), onPressed: (){
             Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));
@@ -51,15 +54,10 @@ class selecttype extends StatelessWidget {
 
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.bottomCenter,
-              end: Alignment.topCenter,
-              stops: [0.1, 0.5],
-              colors: [
-                kOrangeN,
-                kOrangeN
-
-              ],
+            gradient:  LinearGradient(
+              colors: [Color(0xFF46A0AE), Color(0xFF00FFCB)],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
             ),
           ),
           child: Center(

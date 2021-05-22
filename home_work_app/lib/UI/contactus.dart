@@ -13,7 +13,12 @@ class contactus extends StatelessWidget {
       home: Scaffold(
 
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: kPrimaryGradient,
+            ),
+
+          ),
           title: Text("Contact Us"),
           actions: [IconButton(icon: Icon(MyFlutterApp.home), onPressed: (){
             Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));

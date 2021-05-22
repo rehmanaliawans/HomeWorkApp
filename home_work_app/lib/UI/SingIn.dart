@@ -1,10 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/Fade_Animation/FadeAnimation.dart';
-
-import '../theme/theme.dart';
-import 'Navigation_Drawer.dart';
-import 'SignUp.dart';
 import 'SignUp.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
@@ -23,7 +19,18 @@ class signin extends StatelessWidget {
 
       home: Scaffold(
           appBar: AppBar(
-            backgroundColor:  Colors.indigo[800],
+      flexibleSpace: Container(
+        decoration: BoxDecoration(
+
+            gradient: LinearGradient(
+                colors: [
+                  Color.fromRGBO(143, 148, 251, 1),
+                  Color.fromRGBO(143, 148, 251, .9),
+                ]
+            )
+        ),
+
+      ),
             title: Text("SignIn Page"),
             leading:IconButton(icon: Icon(Icons.arrow_back), onPressed: (){
               Navigator.push(context,MaterialPageRoute(builder: (context)=>selecttype()));
