@@ -1,4 +1,3 @@
-import 'file:///C:/Users/Hamid%20Rehman/AndroidStudioProjects/HomeWorkApp/home_work_app/lib/UI/AppColors.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/UI/selected_type.dart';
 import 'contactus.dart';

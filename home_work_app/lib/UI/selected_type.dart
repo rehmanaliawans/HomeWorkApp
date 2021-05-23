@@ -6,8 +6,6 @@ import 'package:home_work_app/theme/theme.dart';
 import 'Navigation_Drawer.dart';
 import 'SingIn.dart';
 import 'my_flutter_app_icons.dart';
-import 'file:///C:/Users/Hamid%20Rehman/AndroidStudioProjects/HomeWorkApp/home_work_app/lib/UI/AppColors.dart';
-
 
 class Constants{
   Constants._();
