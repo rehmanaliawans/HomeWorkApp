@@ -28,7 +28,16 @@ class selecttype extends StatelessWidget {
               gradient: kPrimaryGradient,
             ),
           ),
-          title: Text("Select  User Type"),
+          title: Center(
+            child: Text(
+              "Select  User Type",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
           actions: [
             IconButton(
                 icon: Icon(MyFlutterApp.home),
