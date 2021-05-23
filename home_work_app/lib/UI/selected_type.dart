@@ -35,7 +35,15 @@ class selecttype extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => selecttype()));
-                })
+                }),
+            IconButton(
+              icon: const Icon(Icons.contact_phone_outlined),
+              tooltip: 'ContactUs',
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => contactus()));
+              },
+            ),
           ],
         ),
 
