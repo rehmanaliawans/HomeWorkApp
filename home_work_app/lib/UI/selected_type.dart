@@ -6,6 +6,7 @@ import 'package:home_work_app/theme/theme.dart';
 import 'Navigation_Drawer.dart';
 import 'SingIn.dart';
 import 'my_flutter_app_icons.dart';
+import 'package:home_work_app/UI/Adminpage.dart';
 
 
 class selecttype extends StatelessWidget {
@@ -86,7 +87,7 @@ class selecttype extends StatelessWidget {
                       unpressedImage: Image.asset("admin.png"),
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => signin()));
+                            MaterialPageRoute(builder: (context) => adminpanel()));
                       },
                     )),
                 Container(
