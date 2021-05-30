@@ -2,6 +2,9 @@ import 'package:home_work_app/UI/screens/dashboard/Removeteacher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../selected_type.dart';
+
+
 class SideMenu extends StatelessWidget {
   const SideMenu({
     Key key,
@@ -56,7 +59,14 @@ class SideMenu extends StatelessWidget {
               svgSrc: "assets/icons/menu_profile.svg",
               press: () {},
             ),
-
+            DrawerListTile(
+              title: "Log Out",
+              svgSrc: "assets/icons/menu_profile.svg",
+              press: () {
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (context) => selecttype()));
+              },
+            ),
           ],
         ),
       ),

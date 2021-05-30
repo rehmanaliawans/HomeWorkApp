@@ -72,7 +72,7 @@ class MainDrawer extends StatelessWidget {
           color: Colors.black,
         ),
         title: Text(
-          "Simple Mode",
+          "Admin Panel",
           style: TextStyle(
               fontSize: 15.0,
               fontWeight: FontWeight.w800,
@@ -88,7 +88,23 @@ class MainDrawer extends StatelessWidget {
           color: Colors.black,
         ),
         title: Text(
-          "Hard Mode",
+          "Teacher Panel",
+          style: TextStyle(
+              fontSize: 15.0,
+              fontWeight: FontWeight.w800,
+              color: Colors.deepOrange[800],
+              fontStyle: FontStyle.italic,
+              fontFamily: 'Open Sans'),
+        ),
+      ),
+      ListTile(
+        onTap: () {},
+        leading: Icon(
+          Icons.ac_unit_rounded,
+          color: Colors.black,
+        ),
+        title: Text(
+          "Student Panel",
           style: TextStyle(
               fontSize: 15.0,
               fontWeight: FontWeight.w800,
