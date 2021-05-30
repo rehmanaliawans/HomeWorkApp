@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/Fade_Animation/FadeAnimation.dart';
+import 'package:home_work_app/UI/screens/teacher/main_teacher_page.dart';
 import 'SignUp.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
@@ -159,7 +160,7 @@ class signin extends StatelessWidget {
                           color:  Color.fromRGBO(143, 148, 251, 1),
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => selecttype()));
+                                builder: (context) => MainTeacherPage()));
                             //HardType
                           },
                           child: new Text(
