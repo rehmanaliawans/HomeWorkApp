@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:home_work_app/UI/Navigation_Drawer.dart';
+import 'package:home_work_app/UI/my_flutter_app_icons.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
 import 'package:home_work_app/UI/screens/teacher/task_page.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'package:home_work_app/widgets/teachers/group_tile_teacher.dart';
 
+<<<<<<< Updated upstream
 import '../../Navigation_Drawer.dart';
 import '../../contactus.dart';
 import '../../my_flutter_app_icons.dart';
 import '../../selected_type.dart';
 import 'main_teacher_page.dart';
+=======
+import '../../contactus.dart';
+import '../../selected_type.dart';
+>>>>>>> Stashed changes
 
 class TeacherClasses extends StatefulWidget {
   final String teacherId;
@@ -48,7 +55,10 @@ class _TeacherClassesState extends State<TeacherClasses> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< Updated upstream
       //################  APP BAR   ########################//
+=======
+>>>>>>> Stashed changes
       appBar: AppBar(
         flexibleSpace: Container(
           decoration: BoxDecoration(
@@ -57,7 +67,11 @@ class _TeacherClassesState extends State<TeacherClasses> {
         ),
         title: Center(
           child: Text(
+<<<<<<< Updated upstream
             "Assign Task ",
+=======
+            "Select  User Type",
+>>>>>>> Stashed changes
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 25,
@@ -70,7 +84,11 @@ class _TeacherClassesState extends State<TeacherClasses> {
               icon: Icon(MyFlutterApp.home),
               onPressed: () {
                 Navigator.push(context,
+<<<<<<< Updated upstream
                     MaterialPageRoute(builder: (context) => MainTeacherPage()));
+=======
+                    MaterialPageRoute(builder: (context) => selecttype()));
+>>>>>>> Stashed changes
               }),
           IconButton(
             icon: const Icon(Icons.contact_phone_outlined),
@@ -82,8 +100,11 @@ class _TeacherClassesState extends State<TeacherClasses> {
           ),
         ],
       ),
+<<<<<<< Updated upstream
 
       //################  DRAWER  ########################//
+=======
+>>>>>>> Stashed changes
       drawer: Theme(
         data: Theme.of(context).copyWith(
           //This will change the drawer background to blue.

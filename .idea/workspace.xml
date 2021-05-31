@@ -20,117 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="477527b3-d82b-4788-9db5-df2234d6322f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/activites-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/back22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/child-feedback-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/class-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/complaint-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/emergency-people-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/fees-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/logout-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/medication-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/parent-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/schedule-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/sibiling-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/staff-member-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/student-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/tasks-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/teacher-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home_work_app/assets/images/time-table-icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/.metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/java/com/example/adminpanal/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/drawable-v21/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/values-night/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/Documents.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/Documents.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/Figma_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/Figma_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/Search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/Search.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/doc_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/doc_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/drop_box.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/drop_box.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/excle_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/excle_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/folder.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/folder.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/google_drive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/google_drive.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/media.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/media.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/media_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/media_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_dashbord.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_dashbord.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_doc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_doc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_notification.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_notification.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_profile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_profile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_setting.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_setting.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_store.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_store.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_task.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_task.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/menu_tran.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/menu_tran.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/one_drive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/one_drive.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/pdf_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/pdf_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/sound_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/sound_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/unknown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/unknown.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/icons/xd_file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/icons/xd_file.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/images/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/images/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/images/logo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/assets/images/profile_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/assets/images/profile_pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Flutter/Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Flutter/Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/AppDelegate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/AppDelegate.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/ios/Runner/main.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/controllers/MenuController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/controllers/MenuController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/main.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/models/RecentFile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/models/RecentFile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/models/removeteacher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/models/removeteacher.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/responsive.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/responsive.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/dashboard/Removeteacher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/dashboard/Removeteacher.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/dashboard/components/Rteacher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/dashboard/components/Rteacher.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/dashboard/components/header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/dashboard/components/header.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/dashboard/components/recent_files.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/dashboard/components/recent_files.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/dashboard/components/storage_info_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/dashboard/components/storage_info_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/dashboard/dashboard_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/dashboard/dashboard_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/main/components/side_menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/main/components/side_menu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/lib/screens/main/main_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/main/main_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/pubspec.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/pubspec.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanal/test/widget_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/Adminpage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/Adminpage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/Navigation_Drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/Navigation_Drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/classes_page_teacher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/classes_page_teacher.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/main_teacher_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/main_teacher_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/task_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/task_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/selected_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/selected_type.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +69,14 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\REHMAN ALI\Documents\GitHub\HomeWorkApp\home_work_app\assets\images" />
-      <recent name="C:\Users\REHMAN ALI\Documents\GitHub\HomeWorkApp\home_work_app\lib\UI" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\REHMAN ALI\Documents\GitHub\HomeWorkApp\home_work_app\assets" />
       <recent name="C:\Users\M.Danish\Documents\GitHub\HomeWorkApp\home_work_app\android\app\src\main\res" />
       <recent name="C:\Users\M.Danish\Documents\GitHub\HomeWorkApp\home_work_app\android\app\src\profile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\REHMAN ALI\Documents\GitHub\HomeWorkApp\home_work_app\assets\images" />
+      <recent name="C:\Users\REHMAN ALI\Documents\GitHub\HomeWorkApp\home_work_app\lib\UI" />
     </key>
   </component>
   <component name="RunManager">
@@ -262,26 +174,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="154" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1621769270820" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1621774213733">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1622401855426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621774213733" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1621775831644">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622401855426" />
+    <state width="1306" height="110" key="GridCell.Tab.0.bottom" timestamp="1622403253364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621775831644" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1621775831643">
+    <state width="1306" height="110" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622403253364" />
+    <state width="1306" height="110" key="GridCell.Tab.0.center" timestamp="1622403253364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621775831643" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1621775831643">
+    <state width="1306" height="110" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1622403253364" />
+    <state width="1306" height="110" key="GridCell.Tab.0.left" timestamp="1622403253364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621775831643" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1621775831643">
+    <state width="1306" height="110" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1622403253364" />
+    <state width="1306" height="110" key="GridCell.Tab.0.right" timestamp="1622403253364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621775831643" />
+    <state width="1306" height="110" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622403253364" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1621767791555">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

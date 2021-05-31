@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:home_work_app/UI/contactus.dart';
+import 'package:home_work_app/UI/screens/teacher/main_teacher_page.dart';
 import 'package:imagebutton/imagebutton.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'Navigation_Drawer.dart';
@@ -102,7 +103,7 @@ class selecttype extends StatelessWidget {
                       unpressedImage: Image.asset("teach.png"),
                       onTap: () {
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => signin()));
+                            MaterialPageRoute(builder: (context) => MainTeacherPage()));
                       },
                     )),
                 Container(
