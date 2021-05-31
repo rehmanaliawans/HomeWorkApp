@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:home_work_app/theme/theme.dart';
 import 'package:provider/provider.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
 import 'package:home_work_app/UI/screens/teacher/classes_page_teacher.dart';
 import 'package:home_work_app/widgets/card_item.dart';
+
+import '../../Navigation_Drawer.dart';
+import '../../contactus.dart';
+import '../../my_flutter_app_icons.dart';
+import '../../selected_type.dart';
 
 class MainTeacherPage extends StatefulWidget {
   // static const routeName = '/main-teacher-page';
@@ -45,6 +51,51 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
+        //################  APP BAR   ########################//
+        appBar: AppBar(
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: kPrimaryGradient,
+            ),
+          ),
+          title: Center(
+            child: Text(
+              "Teacher Panel",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 25,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
+          actions: [
+            IconButton(
+                icon: Icon(MyFlutterApp.home),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MainTeacherPage()));
+                }),
+            IconButton(
+              icon: const Icon(Icons.contact_phone_outlined),
+              tooltip: 'ContactUs',
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => contactus()));
+              },
+            ),
+          ],
+        ),
+
+        //################  DRAWER  ########################//
+        drawer: Theme(
+          data: Theme.of(context).copyWith(
+            //This will change the drawer background to blue.
+
+          ),
+          child: Drawer(
+            child: MainDrawer(),
+          ),
+        ),
         body: Container(
           width: double.infinity,
           decoration: BoxDecoration(
@@ -135,7 +186,7 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
                     children: <Widget>[
 
                       CardItem(
-                          desc: 'Classes',
+                          desc: 'Classes/ Add Task',
                           img: 'assets/images/class-icon.png',
                           color: Color.fromRGBO(120, 99, 101, 1),
                           function: (){
@@ -148,7 +199,32 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
                           }
                       ),
 
-
+                      CardItem(
+                          desc: 'Check Task',
+                          img: 'assets/images/tasks-icon.png',
+                          color: Color.fromRGBO(120, 110,230, 1),
+                          function: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                // builder: (context) => TeacherClasses(teacherId: teacherId,schoolId:schoolId)),
+                                  builder: (context) => TeacherClasses()),
+                            );
+                          }
+                      ),
+                      CardItem(
+                          desc: 'Upload Marks',
+                          img: 'assets/images/upload.png',
+                          color: Color.fromRGBO(120, 99, 111, 1),
+                          function: (){
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                // builder: (context) => TeacherClasses(teacherId: teacherId,schoolId:schoolId)),
+                                  builder: (context) => TeacherClasses()),
+                            );
+                          }
+                      ),
 
 
                       CardItem(

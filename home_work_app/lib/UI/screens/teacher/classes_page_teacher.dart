@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
 import 'package:home_work_app/UI/screens/teacher/task_page.dart';
+import 'package:home_work_app/theme/theme.dart';
 import 'package:home_work_app/widgets/teachers/group_tile_teacher.dart';
+
+import '../../Navigation_Drawer.dart';
+import '../../contactus.dart';
+import '../../my_flutter_app_icons.dart';
+import '../../selected_type.dart';
+import 'main_teacher_page.dart';
 
 class TeacherClasses extends StatefulWidget {
   final String teacherId;
@@ -41,6 +48,51 @@ class _TeacherClassesState extends State<TeacherClasses> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //################  APP BAR   ########################//
+      appBar: AppBar(
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: kPrimaryGradient,
+          ),
+        ),
+        title: Center(
+          child: Text(
+            "Assign Task ",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 25,
+              fontStyle: FontStyle.italic,
+            ),
+          ),
+        ),
+        actions: [
+          IconButton(
+              icon: Icon(MyFlutterApp.home),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MainTeacherPage()));
+              }),
+          IconButton(
+            icon: const Icon(Icons.contact_phone_outlined),
+            tooltip: 'ContactUs',
+            onPressed: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => contactus()));
+            },
+          ),
+        ],
+      ),
+
+      //################  DRAWER  ########################//
+      drawer: Theme(
+        data: Theme.of(context).copyWith(
+          //This will change the drawer background to blue.
+
+        ),
+        child: Drawer(
+          child: MainDrawer(),
+        ),
+      ),
       body: Container(
         width: double.infinity,
         decoration: BoxDecoration(
@@ -63,7 +115,7 @@ class _TeacherClassesState extends State<TeacherClasses> {
                       child: FadeAnimation(
                           1.3,
                           Text(
-                            "Classes",
+                            "Add Task",
                             style: GoogleFonts.antic(
                               textStyle: TextStyle(
                                   color: Colors.white,
