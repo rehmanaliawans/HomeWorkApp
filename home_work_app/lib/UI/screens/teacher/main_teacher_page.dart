@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:home_work_app/UI/SingIn.dart';
 import 'package:home_work_app/theme/theme.dart';
 import 'package:provider/provider.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
@@ -234,11 +235,11 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
                           function: (){
 
                             //   Provider.of<Teacher>(context).logOut();
-                            //    Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //       builder: (context) => Login()),
-                            // );
+                               Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => signin()),
+                            );
                           }
                       ),
                     ],
