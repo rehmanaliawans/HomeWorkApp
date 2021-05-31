@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home_work_app/UI/screens/teacher/main_teacher_page.dart';
 import 'package:home_work_app/UI/selected_type.dart';
-import 'Adminpage.dart';
 import 'contactus.dart';
 import 'AppColors.dart';
 
@@ -68,10 +66,7 @@ class MainDrawer extends StatelessWidget {
         ),
       ),
       ListTile(
-        onTap: () {
-          Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => adminpanel()));
-        },
+        onTap: () {},
         leading: Icon(
           Icons.ac_unit,
           color: Colors.black,
@@ -87,10 +82,7 @@ class MainDrawer extends StatelessWidget {
         ),
       ),
       ListTile(
-        onTap: () {
-          Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => MainTeacherPage()));
-        },
+        onTap: () {},
         leading: Icon(
           Icons.ac_unit_rounded,
           color: Colors.black,

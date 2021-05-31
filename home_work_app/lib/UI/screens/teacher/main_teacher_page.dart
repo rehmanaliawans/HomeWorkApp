@@ -1,20 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-<<<<<<< Updated upstream
-=======
-import 'package:home_work_app/UI/Navigation_Drawer.dart';
-import 'package:home_work_app/UI/SingIn.dart';
->>>>>>> Stashed changes
 import 'package:home_work_app/theme/theme.dart';
 import 'package:provider/provider.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
 import 'package:home_work_app/UI/screens/teacher/classes_page_teacher.dart';
 import 'package:home_work_app/widgets/card_item.dart';
 
-<<<<<<< Updated upstream
 import '../../Navigation_Drawer.dart';
-=======
->>>>>>> Stashed changes
 import '../../contactus.dart';
 import '../../my_flutter_app_icons.dart';
 import '../../selected_type.dart';
@@ -59,10 +51,7 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
-<<<<<<< Updated upstream
         //################  APP BAR   ########################//
-=======
->>>>>>> Stashed changes
         appBar: AppBar(
           flexibleSpace: Container(
             decoration: BoxDecoration(
@@ -71,11 +60,7 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
           ),
           title: Center(
             child: Text(
-<<<<<<< Updated upstream
               "Teacher Panel",
-=======
-              "Select  User Type",
->>>>>>> Stashed changes
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
@@ -88,11 +73,7 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
                 icon: Icon(MyFlutterApp.home),
                 onPressed: () {
                   Navigator.push(context,
-<<<<<<< Updated upstream
                       MaterialPageRoute(builder: (context) => MainTeacherPage()));
-=======
-                      MaterialPageRoute(builder: (context) => selecttype()));
->>>>>>> Stashed changes
                 }),
             IconButton(
               icon: const Icon(Icons.contact_phone_outlined),
@@ -104,11 +85,8 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
             ),
           ],
         ),
-<<<<<<< Updated upstream
 
         //################  DRAWER  ########################//
-=======
->>>>>>> Stashed changes
         drawer: Theme(
           data: Theme.of(context).copyWith(
             //This will change the drawer background to blue.
@@ -255,12 +233,12 @@ class _MainTeacherPageState extends State<MainTeacherPage> {
                           color: Color.fromRGBO(154, 80, 80, 1),
                           function: (){
 
-                          //    Provider.of<Teacher>(context).logOut();
-                               Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => signin()),
-                            );
+                            //   Provider.of<Teacher>(context).logOut();
+                            //    Navigator.push(
+                            //   context,
+                            //   MaterialPageRoute(
+                            //       builder: (context) => Login()),
+                            // );
                           }
                       ),
                     ],

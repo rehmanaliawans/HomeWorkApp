@@ -1,14 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:home_work_app/UI/Navigation_Drawer.dart';
-import 'package:home_work_app/UI/screens/teacher/classes_page_teacher.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
-import 'package:home_work_app/theme/theme.dart';
-
-import '../../contactus.dart';
-import '../../my_flutter_app_icons.dart';
-import '../../selected_type.dart';
 
 
 
@@ -40,48 +33,6 @@ class _TaskPageState extends State<TaskPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          flexibleSpace: Container(
-            decoration: BoxDecoration(
-              gradient: kPrimaryGradient,
-            ),
-          ),
-          title: Center(
-            child: Text(
-              "Select  User Type",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 25,
-                fontStyle: FontStyle.italic,
-              ),
-            ),
-          ),
-          actions: [
-            IconButton(
-                icon: Icon(MyFlutterApp.home),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => selecttype()));
-                }),
-            IconButton(
-              icon: const Icon(Icons.contact_phone_outlined),
-              tooltip: 'ContactUs',
-              onPressed: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => contactus()));
-              },
-            ),
-          ],
-        ),
-        drawer: Theme(
-          data: Theme.of(context).copyWith(
-            //This will change the drawer background to blue.
-
-          ),
-          child: Drawer(
-            child: MainDrawer(),
-          ),
-        ),
         body: Container(
             width: double.infinity,
             decoration: BoxDecoration(
@@ -226,13 +177,7 @@ class _TaskPageState extends State<TaskPage> {
                                                           actions: <Widget>[
                                                             FlatButton(
                                                               onPressed: () {
-                                                                Navigator.push(
-                                                                  context,
-                                                                  MaterialPageRoute(
-                                                                    // builder: (context) => TeacherClasses(teacherId: teacherId,schoolId:schoolId)),
-                                                                      builder: (context) => TeacherClasses()),
-                                                                );
-                                                            //    Navigator.of(ctx).pop();
+                                                                Navigator.of(ctx).pop();
                                                               },
                                                               child: Text("okay"),
                                                             ),
