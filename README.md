@@ -18,6 +18,7 @@ LOGIN PAGE
 
 REGISTRATION PAGE 1 AND 2
 ![resgitration page 1](https://user-images.githubusercontent.com/53118785/121803292-36983600-cc5a-11eb-91e2-3697d0db9088.PNG)
+![registration page 2](https://user-images.githubusercontent.com/53118785/121803455-174dd880-cc5b-11eb-91a2-45d1a51f2769.PNG)
 
 
 
