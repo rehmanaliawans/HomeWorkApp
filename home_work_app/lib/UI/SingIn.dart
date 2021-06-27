@@ -5,10 +5,27 @@ import 'package:home_work_app/UI/screens/student/main_student_page.dart';
 import 'SignUp.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+
+
 TextStyle defaultStyle = TextStyle(color: Colors.grey, fontSize: 20.0);
 TextStyle linkStyle = TextStyle(color:  Color.fromRGBO(143, 148, 251, 1),);
 
-class signin extends StatelessWidget {
+class signin extends StatefulWidget {
+
+  @override
+  _signinState createState() => _signinState();
+}
+
+class _signinState extends State<signin> {
+
+  String _email, _password;
+
+  final auth = FirebaseAuth.instance;
+
+  final _formkey = GlobalKey<FormState>();
+
 
   @override
   Widget build(BuildContext context) {
@@ -131,6 +148,12 @@ class signin extends StatelessWidget {
                                     border: Border(bottom: BorderSide(color: Colors.grey[100]))
                                 ),
                                 child: TextField(
+                                  keyboardType: TextInputType.emailAddress,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      _email = value.trim();
+                                    });
+                                  },
                                   decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Email",
@@ -141,6 +164,12 @@ class signin extends StatelessWidget {
                               Container(
                                 padding: EdgeInsets.all(8.0),
                                 child: TextField(
+
+                                  onChanged: (value) {
+                                    setState(() {
+                                      _password = value.trim();
+                                    });
+                                  },
                                   decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "Password",
@@ -158,15 +187,31 @@ class signin extends StatelessWidget {
                           minWidth: 600.0,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
                           color:  Color.fromRGBO(143, 148, 251, 1),
-                          onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => MainStudentPage()));
-                            //HardType
+                          onPressed: () async {
+
+                            dynamic result = await auth.signInWithEmailAndPassword(
+                                email: _email, password: _password);
+                            if (result != null) {
+                              setState(() {
+                                final snackBar =
+                                SnackBar(content: Text('Sign in Sucessfully'));
+                                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                                Navigator.of(context).pushReplacement(MaterialPageRoute(
+                                    builder: (context) => MainStudentPage()));
+                              });
+                            } else {
+                              final snackBar = SnackBar(
+                                  content:
+                                  Text('Could not Sign in With those credentials'));
+                              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                            }
                           },
                           child: new Text(
                             "Login",
                             style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.white),
-                          ),),),
+                          ),
+                        ),
+                        ),
                         SizedBox(height: 30,),
                         FadeAnimation(1.5, Container(
                           alignment: Alignment.center,

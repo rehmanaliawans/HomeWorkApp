@@ -23,9 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="477527b3-d82b-4788-9db5-df2234d6322f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/classes_page_teacher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/classes_page_teacher.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/task_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/task_page.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +51,8 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project-Allocation-App-Flutter-main/project_allocation_app" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -202,6 +199,7 @@
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621767791555" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1624088705698" />
+    <state x="216" y="10" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1624777394274" />
     <state x="583" y="26" width="719" height="558" key="find.popup" timestamp="1624101567070">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
