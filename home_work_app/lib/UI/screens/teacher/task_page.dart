@@ -1,4 +1,6 @@
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
@@ -7,17 +9,16 @@ import 'package:home_work_app/animation/fade_animation.dart';
 
 class TaskPage extends StatefulWidget {
   final String schoolId;
-  final String groupId;
+  final QuerySnapshot groupId;
 
   TaskPage({this.schoolId, this.groupId});
-
   @override
   _TaskPageState createState() => _TaskPageState();
 }
 
 class _TaskPageState extends State<TaskPage> {
-
   GlobalKey<FormState> _formKey = GlobalKey<FormState>(); // key for form
+
 
   TextEditingController subjectControl = new TextEditingController(); // input controller from users
   TextEditingController taskControl = new TextEditingController(); // input controller from users
@@ -160,6 +161,9 @@ class _TaskPageState extends State<TaskPage> {
                                                           FontWeight.bold),
                                                     ),
                                                     onPressed: () {
+
+                                                      Map <String,dynamic> data={"Title":subjectControl.text,"Subject":taskControl.text};
+                                                      FirebaseFirestore.instance.collection("Add Task").add(data);
                                                       // when user press this button send task using GetHelper
                                                       // if you do not understant go to GetHelper
                                                       //   GetHelper.sendTask(

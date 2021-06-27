@@ -26,10 +26,11 @@ dependencies:
   flutter_svg: any
   fl_chart: any
   provider: any
-  firebase_auth: any
-  firebase_core: any
-  firebase_database: any
+  firebase_auth: ^0.20.0
+  firebase_core: ^0.7.0
+  firebase_database: ^6.0.0
   firebase_auth_web: any
+  cloud_firestore: ^0.16.0
 
 
 dev_dependencies:
@@ -50,9 +51,6 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/admin.png
-    - assets/teach.png
-    - assets/student.png
     - assets/images/light-1.png
     - assets/images/light-2.png
     - assets/images/clock.png

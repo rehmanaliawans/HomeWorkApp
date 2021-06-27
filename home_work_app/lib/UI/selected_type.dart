@@ -84,9 +84,9 @@ class selecttype extends StatelessWidget {
                       width: 381,
                       height: 136,
                       pressedImage: Image.asset(
-                        "admin.png",
+                        "assets/admin.png",
                       ),
-                      unpressedImage: Image.asset("admin.png"),
+                      unpressedImage: Image.asset("assets/admin.png"),
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => adminpanel()));
@@ -99,9 +99,9 @@ class selecttype extends StatelessWidget {
                       width: 381,
                       height: 136,
                       pressedImage: Image.asset(
-                        "teach.png",
+                        "assets/teach.png",
                       ),
-                      unpressedImage: Image.asset("teach.png"),
+                      unpressedImage: Image.asset("assets/teach.png"),
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => MainTeacherPage()));
@@ -114,9 +114,9 @@ class selecttype extends StatelessWidget {
                       width: 381,
                       height: 136,
                       pressedImage: Image.asset(
-                        "student.png",
+                        "assets/student.png",
                       ),
-                      unpressedImage: Image.asset("student.png"),
+                      unpressedImage: Image.asset("assets/student.png"),
                       onTap: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => signin()));

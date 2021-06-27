@@ -1,8 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'UI/Splashscreen.dart';
 
 
-void main() => runApp(new MyApp());
+void main()async{
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
+  runApp(new MyApp());
+}
+
+
 
 class MyApp extends StatelessWidget {
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_work_app/UI/Adminpage.dart';
+import 'package:home_work_app/UI/screens/student/main_student_page.dart';
 import 'package:home_work_app/UI/screens/teacher/main_teacher_page.dart';
 import 'package:home_work_app/UI/selected_type.dart';
 import 'contactus.dart';
@@ -106,7 +107,10 @@ class MainDrawer extends StatelessWidget {
         ),
       ),
       ListTile(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => MainStudentPage()));
+          },
         leading: Icon(
           Icons.ac_unit_rounded,
           color: Colors.black,

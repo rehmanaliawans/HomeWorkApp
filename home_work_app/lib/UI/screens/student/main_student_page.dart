@@ -60,7 +60,7 @@ class _MainStudentPageState extends State<MainStudentPage> {
           ),
           title: Center(
             child: Text(
-              "Teacher Panel",
+              "Student Panel",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
@@ -118,7 +118,7 @@ class _MainStudentPageState extends State<MainStudentPage> {
                         child: FadeAnimation(
                             1.3,
                             Text(
-                              "Teacher, Rehman ALi",
+                              "Student, Danish",
                               style: GoogleFonts.antic(
                                 textStyle: TextStyle(
                                     color: Colors.white,
@@ -155,7 +155,7 @@ class _MainStudentPageState extends State<MainStudentPage> {
                         child: FadeAnimation(
                             1.3,
                             Text(
-                              "Phone Number : 030",
+                              "Phone Number : 030000888",
                               style: GoogleFonts.asar(
                                 textStyle: TextStyle(
                                     color: Colors.white,
@@ -186,7 +186,7 @@ class _MainStudentPageState extends State<MainStudentPage> {
                     children: <Widget>[
 
                       CardItem(
-                          desc: 'Select Class, Courses',
+                          desc: 'View Class, Courses',
                           img: 'assets/images/class-icon.png',
                           color: Color.fromRGBO(120, 99, 101, 1),
                           function: (){
@@ -200,7 +200,7 @@ class _MainStudentPageState extends State<MainStudentPage> {
                       ),
 
                       CardItem(
-                          desc: 'Upload Task',
+                          desc: 'Upload Work',
                           img: 'assets/images/tasks-icon.png',
                           color: Color.fromRGBO(120, 110,230, 1),
                           function: (){
@@ -213,7 +213,7 @@ class _MainStudentPageState extends State<MainStudentPage> {
                           }
                       ),
                       CardItem(
-                          desc: 'Marks',
+                          desc: 'Check Marks',
                           img: 'assets/images/upload.png',
                           color: Color.fromRGBO(120, 99, 111, 1),
                           function: (){

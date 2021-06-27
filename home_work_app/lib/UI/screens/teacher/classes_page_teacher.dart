@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
@@ -34,7 +35,7 @@ class _TeacherClassesState extends State<TeacherClasses> {
   }
 
   // go to task page
-  goTaskForm(String groupId, String schoolId) {
+  goTaskForm(QuerySnapshot groupId, String schoolId) {
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -138,32 +139,51 @@ class _TeacherClassesState extends State<TeacherClasses> {
                   // we put the future variable
                   // check if there is no show a message to user no data
                   // else show a list view with tiles tha show our data
-                  child: FutureBuilder(
-                    future: groups,
-                    builder: (context, snapshots) {
-                      // if (!snapshots.hasData || snapshots.data.length == 0) {
-                      //   return Center(
-                      //       child: Text('No Classes Right now',
-                      //           style: GoogleFonts.antic(
-                      //               fontWeight: FontWeight.bold,
-                      //               fontSize: 30)));
-                      // }
-                      return ListView.builder(
+                  child: StreamBuilder(
+                    stream: FirebaseFirestore.instance.collection('Add Task').snapshots(),
+
+                    builder: (BuildContext context,AsyncSnapshot<QuerySnapshot> snapshot) {
+                       if (!snapshot.hasData) {
+                         return Center(
+                             child: Text('No Classes Right now',
+                                 style: GoogleFonts.antic(
+                                     fontWeight: FontWeight.bold,
+                                     fontSize: 30)));
+                       }
+                     // return ListView.builder(
+                     //     scrollDirection: Axis.vertical,
+                     //     physics: ScrollPhysics(),
+                     //     padding: EdgeInsets.only(top: 24),
+                     //     itemCount: snapshot.data.docs.length,
+                     //     shrinkWrap: true,
+                     //
+                     //      snapshot.data.docs.map((document));
+                     //
+                     //       return goTaskForm(
+                     //         snapshot.data, widget.schoolId
+                     //
+                     //       );
+                     //     },
+                     //   );
+                      return ListView(
                         // itemCount: snapshots.data.length,
-                        itemBuilder: (context, index) {
-                          return GroupTeacherTile(
+                        children: snapshot.data.docs.map((document){
+                          return Text(document['Title']);
+
+
+                        }).toList(),
                             // name: snapshots.data[index]['name'],
                             // subject: snapshots.data[index]['subject'],
                             // time: snapshots.data[index]['time_of_room'],
                             // function: () => goTaskForm(
                             //     snapshots.data[index]['id'], widget.schoolId),
-                            name: 'rehman ali',
-                            subject: 'eng',
-                            time: 'time_of_room',
-                            function: () => goTaskForm(
-                                snapshots.data, widget.schoolId),
-                          );
-                        },
+                            // name: 'rehman ali',
+                            // subject: 'eng',
+                            // time: 'time_of_room',
+                            // function: () => goTaskForm(
+                            //     snapshots.data, widget.schoolId),
+
+
                       );
                     },
                   )),

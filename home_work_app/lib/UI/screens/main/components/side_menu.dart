@@ -18,7 +18,7 @@ class SideMenu extends StatelessWidget {
         child: Column(
           children: [
             DrawerHeader(
-              child: Image.asset("../assets/images/logo.jpg"),
+              child: Image.asset("assets/images/logo.jpg"),
             ),
             DrawerListTile(
               title: "Add Teacher And Students",
