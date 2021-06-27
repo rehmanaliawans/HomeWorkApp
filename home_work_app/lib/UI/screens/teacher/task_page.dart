@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
 
+import 'classes_page_teacher.dart';
+
 
 
 class TaskPage extends StatefulWidget {
@@ -181,7 +183,10 @@ class _TaskPageState extends State<TaskPage> {
                                                           actions: <Widget>[
                                                             FlatButton(
                                                               onPressed: () {
-                                                                Navigator.of(ctx).pop();
+                                                                Navigator.push(
+                                                                  context,
+                                                                  MaterialPageRoute(builder: (context) => TeacherClasses()),
+                                                                );
                                                               },
                                                               child: Text("okay"),
                                                             ),

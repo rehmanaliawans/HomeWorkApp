@@ -150,44 +150,67 @@ class _TeacherClassesState extends State<TeacherClasses> {
                                      fontWeight: FontWeight.bold,
                                      fontSize: 30)));
                        }
-                     // return ListView.builder(
-                     //     scrollDirection: Axis.vertical,
-                     //     physics: ScrollPhysics(),
-                     //     padding: EdgeInsets.only(top: 24),
-                     //     itemCount: snapshot.data.docs.length,
-                     //     shrinkWrap: true,
-                     //
-                     //      snapshot.data.docs.map((document));
-                     //
-                     //       return goTaskForm(
-                     //         snapshot.data, widget.schoolId
-                     //
-                     //       );
-                     //     },
-                     //   );
                       return ListView(
                         // itemCount: snapshots.data.length,
                         children: snapshot.data.docs.map((document){
-                          return Text(document['Title']);
+                          return  Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                   child: Text(document['Title'],
+                                        style: GoogleFonts.antic(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 25))
+                                ),
 
+                                Expanded(
+                                    child: Text(document['Subject'],
+                                        style: GoogleFonts.antic(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 15))
+                                )
+
+                              ],
+
+                            )
+                          );
 
                         }).toList(),
-                            // name: snapshots.data[index]['name'],
-                            // subject: snapshots.data[index]['subject'],
-                            // time: snapshots.data[index]['time_of_room'],
-                            // function: () => goTaskForm(
-                            //     snapshots.data[index]['id'], widget.schoolId),
-                            // name: 'rehman ali',
-                            // subject: 'eng',
-                            // time: 'time_of_room',
-                            // function: () => goTaskForm(
-                            //     snapshots.data, widget.schoolId),
-
-
                       );
                     },
                   )),
+
+
             ),
+
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => TaskPage()),
+                );
+              },
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                    gradient: LinearGradient(begin: Alignment.topCenter, colors: [
+                      Color.fromRGBO(154, 233, 178, 1),
+                      Color.fromRGBO(173, 187, 238, 1),
+                    ]),
+                  borderRadius: BorderRadius.all(Radius.circular(80.0)),
+                ),
+                child: Container(
+                  constraints: const BoxConstraints(minWidth: 88.0, minHeight: 36.0), // min sizes for Material buttons
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'ADD TASK',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
