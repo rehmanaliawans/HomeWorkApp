@@ -6,8 +6,16 @@ import 'SingIn.dart';
 import 'SingIn.dart';
 import 'my_flutter_app_icons.dart';
 import 'selected_type.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
-class signup extends StatelessWidget {
+class signup extends StatefulWidget {
+  @override
+  _signupState createState() => _signupState();
+}
+
+class _signupState extends State<signup> {
+  String _email, _password;
+  final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -124,30 +132,11 @@ class signup extends StatelessWidget {
                                   border: Border(bottom: BorderSide(color: Colors.grey[100]))
                               ),
                               child: TextField(
-                                decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: "Name",
-                                    hintStyle: TextStyle(color: Colors.grey[400])
-                                ),
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.all(8.0),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: "Mobile Number",
-                                    hintStyle: TextStyle(color: Colors.grey[400])
-                                ),
-                                obscureText: true,
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.all(8.0),
-                              decoration: BoxDecoration(
-                                  border: Border(bottom: BorderSide(color: Colors.grey[100]))
-                              ),
-                              child: TextField(
+                                onChanged: (value) {
+                                  setState(() {
+                                    _email = value.trim();
+                                  });
+                                },
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     hintText: "Email",
@@ -158,6 +147,11 @@ class signup extends StatelessWidget {
                             Container(
                               padding: EdgeInsets.all(8.0),
                               child: TextField(
+                                onChanged: (value) {
+                                  setState(() {
+                                    _password = value.trim();
+                                  });
+                                } ,
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     hintText: "Password",
@@ -175,11 +169,23 @@ class signup extends StatelessWidget {
                         minWidth: 600.0,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
                         color:  Color.fromRGBO(143, 148, 251, 1),
-                        onPressed: () {
+                        onPressed: () async {
+                          dynamic result = await (auth.createUserWithEmailAndPassword(
+                              email: _email, password: _password));
+                          if (result == null) {
+                            final snackBar =
+                            SnackBar(content: Text('Please Enter a valid Email'));
+                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                          } else {
+                            final snackBar =
+                            SnackBar(content: Text('You are Successfully Registered'));
+                            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                          }
                           Navigator.push(context, MaterialPageRoute(
                               builder: (context) => selecttype()));
                           //HardType
                         },
+
                         child: new Text(
                           "Register",
                           style: new TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold, color: Colors.white),

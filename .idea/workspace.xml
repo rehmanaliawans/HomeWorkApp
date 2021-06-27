@@ -23,21 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="477527b3-d82b-4788-9db5-df2234d6322f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/Navigation_Drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/Navigation_Drawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/Splashscreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/Splashscreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/main/components/side_menu.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/main/components/side_menu.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/student/main_student_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/student/main_student_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/classes_page_teacher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/classes_page_teacher.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/main_teacher_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/main_teacher_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/task_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/screens/teacher/task_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/selected_type.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/selected_type.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home_work_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/SignUp.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/SignUp.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_work_app/lib/UI/SingIn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/home_work_app/lib/UI/SingIn.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +49,8 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
-    <property name="settings.editor.selected.configurable" value="gradle.compiler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project-Allocation-App-Flutter-main/project_allocation_app" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -173,36 +163,42 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="100" y="100" width="1092" height="528" key="AVDManager/0.0.1366.738@0.0.1366.738" timestamp="1624097897263" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1624089442137">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="542" y="141" key="FileChooserDialogImpl" timestamp="1624784801417">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621774213733" />
     <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1624089442137" />
-    <state width="1004" height="169" key="GridCell.Tab.0.bottom" timestamp="1624467648819">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="542" y="141" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1624784801417" />
+    <state width="1540" height="220" key="GridCell.Tab.0.bottom" timestamp="1624784129546">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="151" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622465187531" />
     <state width="1004" height="169" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1624467648819" />
-    <state width="1004" height="169" key="GridCell.Tab.0.center" timestamp="1624467648819">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1540" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1624784129546" />
+    <state width="1540" height="220" key="GridCell.Tab.0.center" timestamp="1624784129545">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="151" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1622465187531" />
     <state width="1004" height="169" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1624467648819" />
-    <state width="1004" height="169" key="GridCell.Tab.0.left" timestamp="1624467648819">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1540" height="220" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1624784129545" />
+    <state width="1540" height="220" key="GridCell.Tab.0.left" timestamp="1624784129545">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="151" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1622465187531" />
     <state width="1004" height="169" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1624467648819" />
-    <state width="1004" height="169" key="GridCell.Tab.0.right" timestamp="1624467648819">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1540" height="220" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1624784129545" />
+    <state width="1540" height="220" key="GridCell.Tab.0.right" timestamp="1624784129546">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="151" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622465187531" />
     <state width="1004" height="169" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1624467648819" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1624088705698">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state width="1540" height="220" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1624784129546" />
+    <state x="216" y="10" key="SettingsEditor" timestamp="1624777394274">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1621767791555" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1624088705698" />
+    <state x="216" y="10" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1624777394274" />
     <state x="583" y="26" width="719" height="558" key="find.popup" timestamp="1624101567070">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
