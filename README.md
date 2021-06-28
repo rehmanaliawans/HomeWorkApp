@@ -1,4 +1,12 @@
 # HOME WORK MANAGMENT APP
+Demo
+
+
+
+https://user-images.githubusercontent.com/53118785/123679016-736e4a80-d860-11eb-8d89-ec15adb33046.mp4
+
+
+
 
 SPLASH SCREEN 
 
