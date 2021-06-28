@@ -6,6 +6,9 @@ Demo
 https://user-images.githubusercontent.com/53118785/123679016-736e4a80-d860-11eb-8d89-ec15adb33046.mp4
 
 
+![image](https://user-images.githubusercontent.com/53118785/123679510-fd1e1800-d860-11eb-8fe4-9673881c27b0.png)
+
+![image](https://user-images.githubusercontent.com/53118785/123679566-0d35f780-d861-11eb-98f8-d53d23f90280.png)
 
 
 SPLASH SCREEN 
