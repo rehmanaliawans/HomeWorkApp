@@ -1,6 +1,14 @@
 # home_work_app
 # HOME WORK MANAGMENT APP
 
+
+Demo
+
+
+
+https://user-images.githubusercontent.com/53118785/123679016-736e4a80-d860-11eb-8d89-ec15adb33046.mp4
+
+
 SPLASH SCREEN 
 
 ![splash](https://user-images.githubusercontent.com/53118785/121803255-18cad100-cc5a-11eb-89db-a223f393aec4.PNG)
