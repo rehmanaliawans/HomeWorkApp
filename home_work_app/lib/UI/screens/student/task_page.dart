@@ -158,7 +158,7 @@ class _TaskPageState extends State<TaskPage> {
                                                     onPressed: () {
 
                                                       Map <String,dynamic> data={"Title":subjectControl.text,"Subject":taskControl.text};
-                                                      FirebaseFirestore.instance.collection("Add Task").add(data);
+                                                      FirebaseFirestore.instance.collection("Add Student Task").add(data);
                                                       // when user press this button send task using GetHelper
                                                       // if you do not understant go to GetHelper
                                                       //   GetHelper.sendTask(
@@ -171,7 +171,7 @@ class _TaskPageState extends State<TaskPage> {
                                                       return showDialog(
                                                         context: context,
                                                         builder: (ctx) => AlertDialog(
-                                                          title: Text("Alert Dialog Box"),
+                                                          title: Text("Student task inserted"),
                                                           content: Text("inserted data"),
                                                           actions: <Widget>[
                                                             FlatButton(

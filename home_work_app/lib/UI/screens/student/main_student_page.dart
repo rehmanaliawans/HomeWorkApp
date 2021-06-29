@@ -19,15 +19,7 @@ class MainStudentPage extends StatefulWidget {
 }
 
 class _MainStudentPageState extends State<MainStudentPage> {
-  //
-  // TeacherInf getTeacherInfo;
-  //
-  // String teacherId;
-  // String teacherName;
-  // String teacherAddress;
-  // String teacherNumber;
-  // String teacherSubject;
-  // String schoolId;
+
 
 
 
@@ -35,17 +27,6 @@ class _MainStudentPageState extends State<MainStudentPage> {
 
   @override
   Widget build(BuildContext context) {
-
-
-    // get teacher data
-    // getTeacherInfo= Provider.of<Teacher>(context).getTeacherInf();
-    //
-    // teacherId = getTeacherInfo.id;
-    // teacherName = getTeacherInfo.name;
-    // teacherAddress = getTeacherInfo.address;
-    // teacherNumber = getTeacherInfo.number;
-    // teacherSubject=getTeacherInfo.subject;
-    // schoolId=getTeacherInfo.schoolID;
 
 
     return WillPopScope(
