@@ -1,19 +1,15 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
-
 import 'classes_page_teacher.dart';
 
 
 
 class TaskPage extends StatefulWidget {
-  final String schoolId;
-  final QuerySnapshot groupId;
 
-  TaskPage({this.schoolId, this.groupId});
+
   @override
   _TaskPageState createState() => _TaskPageState();
 }
@@ -28,7 +24,6 @@ class _TaskPageState extends State<TaskPage> {
   @override
   void initState() {
     super.initState();
-    print(widget.schoolId);
   }
 
 

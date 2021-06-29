@@ -40,8 +40,7 @@ class _TeacherClassesState extends State<TeacherClasses> {
       context,
       MaterialPageRoute(
           builder: (context) => TaskPage(
-            groupId: groupId,
-            schoolId: schoolId,
+
           )),
     );
   }
