@@ -1,6 +1,8 @@
 import 'package:home_work_app/UI/screens/dashboard/Removeteacher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:home_work_app/UI/screens/dashboard/components/Rteacher.dart';
+import 'package:home_work_app/UI/screens/dashboard/dashboard_screen.dart';
 
 import '../../../selected_type.dart';
 
@@ -25,6 +27,7 @@ class SideMenu extends StatelessWidget {
               svgSrc: "assets/icons/menu_dashbord.svg",
               press: () {
 
+
               },
             ),
             DrawerListTile(
@@ -41,7 +44,10 @@ class SideMenu extends StatelessWidget {
               title: "Delete Teachers",
               svgSrc: "assets/icons/menu_profile.svg",
               press: () {
-                removeteacher();
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Rteacher()),
+                );
               },
             ),
             DrawerListTile(
