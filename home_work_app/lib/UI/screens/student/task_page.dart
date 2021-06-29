@@ -3,18 +3,18 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:home_work_app/animation/fade_animation.dart';
-import 'classes_page_teacher.dart';
+import 'package:home_work_app/UI/screens/student/classes_page_student.dart';
 
 
 
-class TaskPage extends StatefulWidget {
+class studenttask extends StatefulWidget {
 
 
   @override
   _TaskPageState createState() => _TaskPageState();
 }
 
-class _TaskPageState extends State<TaskPage> {
+class _TaskPageState extends State<studenttask> {
   GlobalKey<FormState> _formKey = GlobalKey<FormState>(); // key for form
 
 
@@ -158,7 +158,7 @@ class _TaskPageState extends State<TaskPage> {
                                                     onPressed: () {
 
                                                       Map <String,dynamic> data={"Title":subjectControl.text,"Subject":taskControl.text};
-                                                      FirebaseFirestore.instance.collection("Add Student Task").add(data);
+                                                      FirebaseFirestore.instance.collection("Add Student").add(data);
                                                       // when user press this button send task using GetHelper
                                                       // if you do not understant go to GetHelper
                                                       //   GetHelper.sendTask(

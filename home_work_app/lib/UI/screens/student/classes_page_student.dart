@@ -39,7 +39,7 @@ class _TeacherClassesState extends State<TeacherClasses> {
     Navigator.push(
       context,
       MaterialPageRoute(
-          builder: (context) => TaskPage(
+          builder: (context) => studenttask(
 
           )),
     );
@@ -139,7 +139,7 @@ class _TeacherClassesState extends State<TeacherClasses> {
                   // check if there is no show a message to user no data
                   // else show a list view with tiles tha show our data
                   child: StreamBuilder(
-                    stream: FirebaseFirestore.instance.collection('Add Task').snapshots(),
+                    stream: FirebaseFirestore.instance.collection('Add Student').snapshots(),
 
                     builder: (BuildContext context,AsyncSnapshot<QuerySnapshot> snapshot) {
                        if (!snapshot.hasData) {
@@ -187,7 +187,7 @@ class _TeacherClassesState extends State<TeacherClasses> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => TaskPage()),
+                  MaterialPageRoute(builder: (context) => studenttask()),
                 );
               },
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
